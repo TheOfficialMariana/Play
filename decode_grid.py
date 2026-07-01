@@ -52,7 +52,7 @@ def decode_secret_message(doc_url: str) -> None:
     for x, char, y in entries:
         grid[y][x] = char
 
-    for row in grid:
+    for row in reversed(grid):
         print("".join(row))
 
 
